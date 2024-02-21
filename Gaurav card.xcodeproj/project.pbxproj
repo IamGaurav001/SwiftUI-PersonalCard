@@ -14,6 +14,9 @@
 		9D693A522AA724D40080B2C9 /* Gaurav_cardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D693A512AA724D40080B2C9 /* Gaurav_cardTests.swift */; };
 		9D693A5C2AA724D40080B2C9 /* Gaurav_cardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D693A5B2AA724D40080B2C9 /* Gaurav_cardUITests.swift */; };
 		9D693A5E2AA724D40080B2C9 /* Gaurav_cardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D693A5D2AA724D40080B2C9 /* Gaurav_cardUITestsLaunchTests.swift */; };
+		9D693A6C2AA728FC0080B2C9 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D693A6B2AA728FC0080B2C9 /* Pacifico-Regular.ttf */; };
+		9D7E36822AA72C5E00840A61 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E36812AA72C5E00840A61 /* Storyboard.storyboard */; };
+		9D7E36872AA7466B00840A61 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E36862AA7466B00840A61 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		9D693A572AA724D40080B2C9 /* Gaurav cardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gaurav cardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D693A5B2AA724D40080B2C9 /* Gaurav_cardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaurav_cardUITests.swift; sourceTree = "<group>"; };
 		9D693A5D2AA724D40080B2C9 /* Gaurav_cardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaurav_cardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D693A6B2AA728FC0080B2C9 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		9D7E36812AA72C5E00840A61 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		9D7E36832AA72E2100840A61 /* Gaurav-card-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gaurav-card-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9D7E36862AA7466B00840A61 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +101,14 @@
 		9D693A3F2AA724D20080B2C9 /* Gaurav card */ = {
 			isa = PBXGroup;
 			children = (
+				9D7E36832AA72E2100840A61 /* Gaurav-card-Info.plist */,
 				9D693A402AA724D20080B2C9 /* Gaurav_cardApp.swift */,
+				9D693A6A2AA728B00080B2C9 /* fonts */,
 				9D693A422AA724D20080B2C9 /* ContentView.swift */,
+				9D7E36862AA7466B00840A61 /* InfoView.swift */,
 				9D693A442AA724D40080B2C9 /* Assets.xcassets */,
 				9D693A462AA724D40080B2C9 /* Preview Content */,
+				9D7E36812AA72C5E00840A61 /* Storyboard.storyboard */,
 			);
 			path = "Gaurav card";
 			sourceTree = "<group>";
@@ -125,6 +136,14 @@
 				9D693A5D2AA724D40080B2C9 /* Gaurav_cardUITestsLaunchTests.swift */,
 			);
 			path = "Gaurav cardUITests";
+			sourceTree = "<group>";
+		};
+		9D693A6A2AA728B00080B2C9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9D693A6B2AA728FC0080B2C9 /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D693A6C2AA728FC0080B2C9 /* Pacifico-Regular.ttf in Resources */,
+				9D7E36822AA72C5E00840A61 /* Storyboard.storyboard in Resources */,
 				9D693A482AA724D40080B2C9 /* Preview Assets.xcassets in Resources */,
 				9D693A452AA724D40080B2C9 /* Assets.xcassets in Resources */,
 			);
@@ -258,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D693A432AA724D20080B2C9 /* ContentView.swift in Sources */,
+				9D7E36872AA7466B00840A61 /* InfoView.swift in Sources */,
 				9D693A412AA724D20080B2C9 /* Gaurav_cardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +441,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Gaurav card/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gaurav-card-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +470,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Gaurav card/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gaurav-card-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
